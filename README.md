@@ -1,3 +1,37 @@
+# Main Info
+
+## QGroundControl
+
+Download QGroundControl
+```
+wget https://docs.qgroundcontrol.com/master/en/qgc-user-guide/releases/daily_builds.html
+```
+
+Launch p4x Gazebo 
+```
+make px4_sitl gz_x500
+```
+
+Run headless mode
+```
+HEADLESS=1 make px4_sitl gz_x500
+```
+
+Run with specific world
+```
+PX4_GZ_WORLD=windy make px4_sitl gz_x500
+```
+
+## Commander commands
+
+After simulation is running you can press "enter" and text some of the commands for drone
+pxh>
+
+```
+commander takeoff
+commander land
+```
+
 # PX4 Drone Autopilot
 
 [![Releases](https://img.shields.io/github/release/PX4/PX4-Autopilot.svg)](https://github.com/PX4/PX4-Autopilot/releases) [![DOI](https://zenodo.org/badge/22634/PX4/PX4-Autopilot.svg)](https://zenodo.org/badge/latestdoi/22634/PX4/PX4-Autopilot)
